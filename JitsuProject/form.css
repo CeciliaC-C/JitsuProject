@@ -1,0 +1,193 @@
+/* HEADER, FOOTER, ASIDE AND NAV BAR */
+
+header {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+footer {
+  color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  font-size:14px;
+}
+
+nav {
+  background-color: lightcyan;
+}
+
+nav ul{
+  padding:0;
+  list-style: none;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a{
+  color:grey;
+  text-decoration: none;
+  font-size:14px;
+  padding-right:15px;
+  text-transform: uppercase;
+}
+
+aside {
+  color: lightseagreen;
+  position:fixed;
+  top:50%;
+}
+
+aside img {
+  height:50px;
+  box-sizing: border-box;
+  padding:5px;
+  display: block;
+}
+
+#fb-icon {
+  position: absolute;
+  top: 50px;
+}
+
+#insta-icon {
+  position: absolute;
+  top: -50px;
+}
+
+#whatsapp-icon {
+  position:absolute;
+}
+
+/* MAIN HEADING SETTINGS */
+
+#main-heading {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#main-heading h1 {
+  display: inline-block;
+}
+
+img {
+  height: 60px;
+  float: right;
+}
+
+/* BODY SETTINGS */
+
+body {
+  background-color: lightblue;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  color: rgb(5, 12, 156); 
+  margin-left:10px;
+  text-align: left;
+}
+
+textarea {
+  width:100%;
+}
+
+/* CONTAINERS  */
+
+.container-top {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* SPECIFIC ELEMENTS  */
+
+#input-form {
+  padding: 10px;
+}
+
+#list_of_attendees {
+  height : 200px;
+}
+
+#type-box {
+  width: 50%;
+}
+
+#cost-box {
+  width: 140px;
+  color: grey;
+  display: flex;
+  margin-left:auto;
+}
+
+#demo {
+  padding-left: 10px;
+  font-size: small;
+}
+
+#add_new_attendee {
+  width: 30%;
+}
+
+#button:hover{
+  background-color:grey;
+  border-radius:3px;
+
+}
+
+@media(max-width:440px){
+  aside {
+    position:static;
+    display: block;
+    width:50%;
+    min-width: 200px;
+    margin: auto;
+    padding-top: 10px;
+  }
+
+  aside img {
+    height:50px;
+    box-sizing: border-box;
+    padding-left: 20px;
+  }
+  
+  #fb-icon {
+    position: static;
+  }
+  
+  #insta-icon {
+    position: static;
+  }
+  
+  #whatsapp-icon {
+    position:static;
+  }
+
+  nav ul{
+    padding:0;
+    list-style: none;
+  }
+  
+  nav li {
+    display: block;
+  }
+
+}

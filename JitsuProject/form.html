@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Register Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <header> Cambridge University Jiu-Jitsu Club </header>
+
+    <div id="main-heading" class="container">
+      <h1>
+        CUJJC Website
+      </h1>
+      <img src="images/coat_of_arms.png"></img>
+    </div>
+
+    <nav>
+      <div id="nav" class="container">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Register Form</a></li>
+          <li><a href="#">Attendance Records</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="aside">
+      <aside>
+        <img src="images/fb-icon.png" id="fb-icon"></img>
+        <img src="images/ig-icon.png" id="insta-icon"></img>
+        <img src="images/whatsapp-icon.png" id="whatsapp-icon"></img>
+      </aside>
+    </div>
+
+    <div class="container">
+      <h2> Register Form </h2>
+
+      <p id="demo"> 
+        Random words here.
+      </p>
+
+      <form id="input-form" method="POST" action="sendmail.php" onsubmit="return false">
+        <div class="form-row form-error" style="display:none;"></div>
+        <div class="container-top">
+        <!-- <br/> -->
+  <!--      <div class="form-row">-->
+  <!--        <label for="form-date">Date:</label>-->
+  <!--        <input id="form-date" class="form-input" type="date" name="date" required>-->
+  <!--      </div>-->
+        <!-- <br/>    -->
+
+          <div id="type-box" class="form-row">
+            <label for="form-session-types">Session Type: </label>
+            <select id="form-session-types" name="session_types">
+              <option value="term">Term</option>
+              <option value="outofterm">Out of Term</option>
+              <option value="greens+">Greens+</option>
+              <option value="grading">Grading</option>
+            </select>
+          </div>
+
+          <br/>
+          <div id="cost-box" class="form-row">
+            <label for="form-session-cost"> SESSION COST&nbsp </label>
+            <text id="form-session-cost" name="session_cost">
+               £5
+            </text>
+            </select>
+          </div>
+        </div>
+
+        <br/>
+        <div class="form-row">
+            <label for="list_of_attendees"> Attendees: </label>
+            <select id="list_of_attendees" name="list_of_attendees" multiple>
+            </select>
+        </div>
+
+        <br/>
+        <div class="form-row">
+          <label for="add_new_attendee"> New Member: </label>
+          <input id="add_new_attendee"></input>
+          <select id="grade_new_member" name="grade_new_member">
+              <option value="novice">Novice</option>
+              <option value="yellow">Yellow</option>
+              <option value="orange+">Orange</option>
+              <option value="green">Green</option>
+          </select>
+          <button id="button2" type="submit" onclick="on_add()"> ADD </button>
+        </div>
+
+        <p id="demo"> </p>
+
+        <div class="form-row">
+          <label for="notes">Notes:</label>
+          <textarea id="notes" class="form-input" name="notes"></textarea>
+        </div>
+
+        <br/>
+        <button id="button" type="submit" onclick="on_click()">Submit</button>
+
+      </form>
+    </div>
+    <hr>
+    <footer>Last update: 11/06/2024</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
+
+

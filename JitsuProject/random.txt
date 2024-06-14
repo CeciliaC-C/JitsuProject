@@ -1,0 +1,35 @@
+
+<!-- <script src="jquery.js"></script>
+
+<script>
+
+function on_click() {
+  var selectedText = $("#list_of_attendees :button").text();
+  var selectedValue = $("#list_of_attendees").val();
+  document.getElementById("demo").innerHTML = selectedValue;
+};
+
+function on_add() {
+  var selectedText = $("#add_new_attendee :input").text();
+  var selectedValue = $("#add_new_attendee").val();
+  document.getElementById("demo").innerHTML = selectedValue;
+};
+
+// $(function(){
+//   var obj = $.getJSON('members_by_grade.json', function(data) {
+//       var opt = JSON.stringify(data);
+//       $('#demo').text(opt); 
+//       $.each(data, function(key,value){
+//           var group = $('<optgroup label="' + key + '" />');
+//           $('#notes').text(key);
+//         })
+//     });
+// });
+
+$(function(){
+  var data = $.getJSON('members_by_grade.json', function(data) {
+    for (item in data.results){
+      $('#demo').text(item);
+    };
+  });
+}); -->
